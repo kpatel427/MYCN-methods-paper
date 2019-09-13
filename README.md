@@ -25,6 +25,7 @@ Script calls super enhances iteratively for all lines. Make sure to change data 
 Rscript lily.R
 ```
 
+<a name="2. Filtering Super Enhancers (SEs)"></a>
 ## 2. Filtering Super Enhancers (SEs)
 This step filters for super enhances present in two or more MYCN amplified/non-amplified lines.
 Annotate all SEs called by LILY before running the filtering script.
@@ -39,6 +40,7 @@ Change paths to directories to reflect paths to your files.
 Rscript SEfilter.R
 ```
 
+<a name="3. ChipSeq Heatmaps"></a>
 ## 3. ChipSeq Heatmaps
 ChipSeq heatmaps were generated for MYCN (annotating top 5K peaks) and all histone marks for COGN415 line (annotating filtered SEs from step 2)
 
@@ -61,6 +63,7 @@ plotProfile -m COGN415.mat.gz -out COGN415.profile.png --perGroup  --colors oran
 
 ```
 
+<a name="Additional info"></a>
 ## Additional info
 > Author: patelk26@email.chop.edu (Khushbu Patel)
 
