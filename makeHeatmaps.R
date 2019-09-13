@@ -5,8 +5,8 @@
 mycn_bw <- '/mnt/isilon/maris_lab/target_nbl_ngs/ChipSeqAnalysis/mycn-myc-full-dataset/peakfiles/bigwig/'
 cl <- c('COGN415-NMYC-20171205','Kelly-MYCN-20150914', 'LAN5-NMYC-20171205', 'NB1643-NMYC-20171205', 'NB69-NMYC-20171205', 'NGP-MYCN-20150914')
 
-top_5K_peaks_dir <- '/mnt/isilon/maris_lab/target_nbl_ngs//KP/heatmaps/2019-09-11/MYCN/top_5K_peaks/'
-heatmap_dir <- '/mnt/isilon/maris_lab/target_nbl_ngs//KP/heatmaps/2019-09-11/MYCN/'
+top_5K_peaks_dir <- '~/KP/heatmaps/2019-09-11/MYCN/top_5K_peaks/'
+heatmap_dir <- '~/KP/heatmaps/2019-09-11/MYCN/'
 
 #.. For MYCN-----
 
