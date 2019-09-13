@@ -8,6 +8,7 @@ Follow steps 1-3 provided in the LILY's github documentation (https://github.com
 
 ### How to run 
 Script calls super enhances iteratively from all lines. Make sure to change data directory and result directory paths before running the script.
+
 `Rscript lily.R`
 
 ## 2. Filtering Super Enhancers (SEs)
