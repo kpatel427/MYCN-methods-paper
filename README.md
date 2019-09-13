@@ -1,5 +1,12 @@
 # MYCN-methods-paper
 
+## Table of Contents
+- [1. LILY (Super Enhancer calling)](#1.%20LILY%20(Super%20Enhancer%20calling))
+- [2. Filtering Super Enhancers (SEs)](#2.%20Filtering%20Super%20Enhancers%20(SEs))
+- [3. ChipSeq Heatmaps](3.%20ChipSeq%20Heatmaps)
+- [Additional info](#Additional%20info)
+
+
 ## 1. LILY (Super Enhancer calling)
 LILY is a pipeline for detection of super-enhancers using H3K27ac ChIP-seq data, which includes explicit correction for copy number variation inherent to cancer samples. The pipeline is based on the ROSE algorithm originally developed by the the Young lab. 
 
