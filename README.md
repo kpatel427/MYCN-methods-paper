@@ -15,7 +15,7 @@ You will need following files to run LILY:
 ### How to run 
 Script calls super enhances iteratively from all lines. Make sure to change data directory and result directory paths before running the script.
 ```R
-Rscript lily.
+Rscript lily.R
 ```
 
 ## 2. Filtering Super Enhancers (SEs)
