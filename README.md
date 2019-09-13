@@ -32,7 +32,7 @@ Change paths to directories to reflect paths to your files.
 Rscript SEfilter.R
 ```
 
-## 3. Heatmaps
+## 3. ChipSeq Heatmaps
 ChipSeq heatmaps were generated for MYCN (annotating top 5K peaks) and all histone marks for COGN415 line (annotating filtered SEs from step 2)
 
 ### Prerequisites
