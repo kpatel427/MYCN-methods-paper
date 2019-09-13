@@ -64,25 +64,3 @@ mycn_Nonamp_SE <- setDT(merge.df1)[merge.df1$na_count <= 2, 'Gene.Name']
 mycn_Nonamp_SE <-  unique(mycn_Nonamp_SE$Gene.Name)
 
 write.table(mycn_Nonamp_SE, file = paste0(out_dir,Sys.Date(),'_mycnNonAmp_SE_LILY_calls_filtered.txt'), quote = F, col.names = F, row.names = F, sep = '\t')
-
-
-# ----------------------------------------------------------------------------------------------------------------------------------------------------------
-# to make a list of SE's present only in amp and SE's present only in non-amp
-
-SE_mycnAmp_calls <-  read.delim('2019-09-09_SE_LILY_MYCN_amp.txt', header = F)
-SE_mycn_Nonamp_calls <- read.delim('2019-09-09_SE_LILY_MYCN_NonAmp.txt', header = F)
-
-# t1 <-  c(1,2,3,4)
-# t2 <- c(3,4,5,6,7)
-# 
-# setdiff(t2,t1)
-
-# to find out SE's only in mycn amp
-only_mycnAmp <- setdiff(SE_mycnAmp_calls$V1, SE_mycn_Nonamp_calls$V1)
-
-# to find out SE's only in mycn non-amp
-only_Nonamp <- setdiff(SE_mycn_Nonamp_calls$V1, SE_mycnAmp_calls$V1)
-
-write.table(only_mycnAmp, file = paste0(out_dir,Sys.Date(),'_SE_mycnAmp_only.txt'), quote = F, col.names = F, row.names = F, sep = '\t')
-write.table(only_Nonamp, file = paste0(out_dir,Sys.Date(),'_SE_mycnNonAmp_only.txt'), quote = F, col.names = F, row.names = F, sep = '\t')
-
