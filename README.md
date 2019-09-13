@@ -23,7 +23,7 @@ This step filters for super enhances present in two or more MYCN amplified/non-a
 Annotate all SEs called by LILY before running the filtering script.
 
 ### prerequisites
-Annotated SEs called by LILY
+Annotated SEs called by LILY (Annotations were performed using Homer)
 
 ### How to run
 Change paths to directories to reflect paths to your files.
@@ -33,3 +33,23 @@ Rscript SEfilter.R
 ```
 
 ## 3. Heatmaps
+ChipSeq heatmaps were generated for MYCN (annotating top 5K peaks) and all histone marks for COGN415 line (annotating filtered SEs from step 2)
+
+### prerequisites
+[deepTools 3.2.0](https://deeptools.readthedocs.io/en/develop/content/installation.html)
+
+### How to run
+To generate MYCN heatmaps (with top 5K peaks)
+```R
+Rscript makeHeatmaps.R
+```
+
+To generate COGN415-histone-marks (with filtered SEs)
+```bash
+computeMatrix reference-point -S bigwigs/COGN415-H3K27Ac.bw bigwigs/COGN415-H3K27me3.bw bigwigs/COGN415-H3K4me1.bw bigwigs/COGN415-H3K4me3.bw -R ~/KP/enhancer-rank-list-H3K27Ac/LILY/result/SE_scores_anno/SE_filtered/SE_mycnAmp.bed -a 4000 -b 4000 --sortUsing max --skipZeros -o COGN415.mat.gz
+
+plotHeatmap -m COGN415.mat.gz --colorList 'white,#ff7400' 'white,#004000' 'white,#00007F' 'white,#6F326F' --whatToShow 'heatmap and colorbar' --sortRegions descend --sortUsing max --zMin 0 --zMax 4 --regionsLabel Super_Enhancers -out COGN415.png
+
+plotProfile -m COGN415.mat.gz -out COGN415.profile.png --perGroup  --colors orange green blue purple --regionsLabel Super_Enhancers --plotHeight 10 --plotWidth 15
+
+```
