@@ -5,8 +5,8 @@ library(tidyverse)
 amp_cl <- c('COGN415-H3K27Ac', 'KELLY-H3K27Ac', 'LAN5-H3K27Ac', 'NB1643-H3K27Ac','NGP-H3K27Ac', 'SKNBE2C-H3K27Ac')
 nonAmp_cl <- c('NB69-H3K27Ac', 'NBLS-H3K27Ac', 'SKNAS-H3K27Ac', 'SKNFI-H3K27Ac')
 
-lily_dir <- '/Volumes/target_nbl_ngs/KP/enhancer-rank-list-H3K27Ac/LILY/result/SE_scores_anno/'
-out_dir <-  '/Volumes/target_nbl_ngs/KP/enhancer-rank-list-H3K27Ac/LILY/result/SE_scores_anno/SE_filtered/'
+lily_dir <- '~/KP/enhancer-rank-list-H3K27Ac/LILY/result/SE_scores_anno/'
+out_dir <-  '~/KP/enhancer-rank-list-H3K27Ac/LILY/result/SE_scores_anno/SE_filtered/'
 
 #..MYCN AMPLIFIED LINES ----
 for(x in amp_cl){
