@@ -22,5 +22,3 @@ for(x in cl){
   system(paste0('plotProfile -m ', heatmap_dir, x,'.mat.gz -out ',heatmap_dir,x,'.profile.png --colors red --regionsLabel Super_Enhancers --plotHeight 10 --plotWidth 15'))
 }
 
-
-#.. For Histone-----
