@@ -31,7 +31,7 @@ This step filters for super enhances present in two or more MYCN amplified/non-a
 Annotate all SEs called by LILY before running the filtering script.
 
 ### Prerequisites
-Annotated SEs called by LILY (Annotations were performed using Homer)
+Annotated SEs called by LILY (Annotations were performed using [Homer](http://homer.ucsd.edu/homer/ngs/annotation.html))
 
 ### How to run
 Change paths to directories to reflect paths to your files.
