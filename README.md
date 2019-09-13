@@ -7,6 +7,7 @@ LILY is a pipeline for detection of super-enhancers using H3K27ac ChIP-seq data,
 Follow steps 1-3 provided in the LILY's github documentation (https://github.com/BoevaLab/LILY). Clone the repository to run LILY scripts.
 
 ### How to run 
+Script calls super enhances iteratively from all lines. Make sure to change data directory and result directory paths before running the script.
 `Rscript lily.R`
 
 ## 2. Filtering Super Enhancers (SEs)
