@@ -59,4 +59,4 @@ plotProfile -m COGN415.mat.gz -out COGN415.profile.png --perGroup  --colors oran
 
 > Organization: The Children's Hospital of Philadelphia
 
-> Project Status: __in_process__
+> Project Status: __In process__
