@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [1. LILY (Super Enhancer calling)](#1.%20LILY%20(Super%20Enhancer%20calling))
-- [2. Filtering Super Enhancers (SEs)](#2.%20Filtering%20Super%20Enhancers%20(SEs))
+- [2. Annotation](#2.%20Annotation)
 - [3. ChipSeq Heatmaps](3.%20ChipSeq%20Heatmaps)
 - [Additional info](#Additional%20info)
 
@@ -25,19 +25,18 @@ Script calls super enhances iteratively for all lines. Make sure to change data 
 Rscript lily.R
 ```
 
-<a name="2. Filtering Super Enhancers (SEs)"></a>
-## 2. Filtering Super Enhancers (SEs)
-This step filters for super enhances present in two or more MYCN amplified/non-amplified lines.
-Annotate all SEs called by LILY before running the filtering script.
+<a name="2. Annotation"></a>
+## 2. Annotation
+Annotating LILY calls using Homer
 
 ### Prerequisites
-Annotated SEs called by LILY (Annotations were performed using [Homer](http://homer.ucsd.edu/homer/ngs/annotation.html))
+[Homer](http://homer.ucsd.edu/homer/ngs/annotation.html) 
 
 ### How to run
 Change paths to directories to reflect paths to your files.
 
-```R
-Rscript SEfilter.R
+```bash
+annotatePeaks.pl lilyCalls.bed hg19 > lillyCalls.anno.bed
 ```
 
 <a name="3. ChipSeq Heatmaps"></a>
